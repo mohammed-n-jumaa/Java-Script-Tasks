@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+const me = {
+  firstName: "Mohammed",
+  lastName: "Qadome",
+  age: 24, 
+  dob:2000, 
+  favoriteFood: [
+    "Mansaf",
+    "Kabsa",
+    "Shawrma"
+  ],
+  favoriteMovies: [
+    "The god Father ",
+    "Her",
+    "Ex Machina",
+    "2001: A Space Odyssey",
+    "Tron: Legacy"
+  ]
+};
+
+console.log(me);
+//..........................
+//.............Func TASK.........
+function firstName(persons) {
+  return persons.map(person => person.firstName);
+}
+
+const persons = [
+  { firstName: 'Mohammed', lastName: 'Nedal' },
+  { firstName: 'ali', lastName: 'mousa' },
+  { firstName: 'tala', lastName: 'ali' },
+  { firstName: 'sanaa', lastName: 'aqel' },
+  { firstName: 'Soso', lastName: 'ahmad' }
+];
+
+console.log(firstName(persons)); 
+
+
+
+    </script>
+</body>
+</html>

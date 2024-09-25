@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//.............loops................
+//...............1..................
+let num = 5;  
+let factorial = 1;
+
+for (let i = 1; i <= num; i++) {
+    factorial *= i;
+}
+
+console.log(`Factorial of ${num}: ${factorial}`);
+ //...............2.................
+let n = 10;  
+let a = 0, b = 1;
+
+console.log(a); 
+
+for (let i = 1; i <= n; i++) {
+    console.log(b);
+    [a, b] = [b, a + b];  
+    if (b > n) {
+        break;  //
+    }
+}
+//.................3................
+// Prime numbers up to a given number
+let x = 20;  
+console.log(`Prime numbers up to ${n} are:`);
+
+for (let num = 2; num <= x; num++) {
+    let isPrime = true;
+
+    for (let i = 2; i < num; i++) {
+        if (num % i === 0) {
+            isPrime = false;
+            break;
+        }
+    }
+
+    if (isPrime) {
+        console.log(num);
+    }
+}
+//..................4.................
+let arr = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+];  
+
+console.log('Elements of the 2D array:');
+for (let i = 0; i < arr.length; i++) {
+    for (let j = 0; j < arr[i].length; j++) {
+        console.log(arr[i][j]);
+    }
+}
+//..................5..................
+let ara = [1, 2, 3, 4, 5];  // 
+
+console.log('Array in reverse order:');
+for (let i = arr.length - 1; i >= 0; i--) {
+    console.log(ara[i]);
+}
+
+
+    </script>
+</body>
+</html>

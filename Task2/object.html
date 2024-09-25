@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//.................object.................
+//....................1...................
+let person = { name: "Adam", age: 25 };
+person["gender"] = "male";
+console.log("After adding property using bracket notation:", person);
+
+//....................2...................
+let values = Object.values(person);
+console.log("Object values:", values);
+
+//....................3...................
+let entries = Object.entries(person);
+console.log("Object entries:", entries);
+
+//....................4...................
+let additionalInfo = { country: "USA" };
+let merged = Object.assign({}, person, additionalInfo);
+console.log("Merged object:", merged);
+
+//....................5...................
+Object.seal(person);
+person.age = 30; 
+person.city = "New York"; 
+delete person.gender; 
+console.log("After Object.seal():", person);
+
+    </script>
+</body>
+</html>

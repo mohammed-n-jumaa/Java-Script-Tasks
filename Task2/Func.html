@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//..................function...........................
+//.....................1...............................
+function findSmallest(arr) {
+    return Math.min(...arr);
+}
+
+//.....................2..............................
+function AlphabeticalOrder(str) {
+    return str.split('').sort().join('');
+}
+
+//.....................3...............................
+function countWords(str) {
+    return str.split(' ').length;
+}
+
+//.....................4...............................
+function MultiplyByLength(arr) {
+    let length = arr.length;
+    return arr.map(num => num * length);
+}
+
+//.....................5...............................
+function doubleChar(str) {
+    return str.split('').map(char => char + char).join('');
+}
+
+console.log(findSmallest([30, 45, 60, 1]));         
+console.log(AlphabeticalOrder('hello'));             
+console.log(countWords('hello from CodingAcademy!'));
+console.log(MultiplyByLength([4, 2, 5]));          
+console.log(doubleChar('Coding'));               
+
+
+    </script>
+</body>
+</html>

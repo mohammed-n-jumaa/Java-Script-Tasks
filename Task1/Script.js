@@ -1,3 +1,4 @@
+"use strict"
 //Data Types Task
 //.........1..........
 let cash = 1000;
