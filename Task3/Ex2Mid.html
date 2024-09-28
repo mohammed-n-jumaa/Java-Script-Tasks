@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Exercises</title>
+    <style>
+        .highlight {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>JavaScript Exercises</h1>
+
+    <h2 id="wordCount">Word Count: </h2>
+
+    <p id="paragraph">
+        JavaScript is a versatile language. It is used to create dynamic, interactive websites and web applications. 
+        Web developers often rely on JavaScript to enhance user experience and handle complex tasks. Learning JavaScript is essential for modern web development.
+    </p>
+
+    <a id="sourceLink" href="https://google.com/" target="_blank">Go to source</a>
+
+    <script>
+        const paragraph = document.getElementById("paragraph");
+        const paragraphText = paragraph.innerHTML;
+
+        const highlightLongWords = () => {
+            const words = paragraphText.split(' ');
+            const highlightedText = words.map(word => {
+                if (word.length > 8) {
+                    return `<span class="highlight">${word}</span>`;
+                }
+                return word;
+            }).join(' ');
+            paragraph.innerHTML = highlightedText;
+        };
+
+       
+        const splitSentences = () => {
+            const sentences = paragraph.innerHTML.split('. ');
+            const formattedSentences = sentences.map(sentence => sentence.trim() + '.<br>').join('');
+            paragraph.innerHTML = formattedSentences;
+        };
+
+        const countWords = () => {
+            const words = paragraphText.split(' ');
+            const wordCount = words.length;
+            document.getElementById('wordCount').innerHTML += wordCount;
+        };
+
+        highlightLongWords();
+        splitSentences();
+        countWords();
+    </script>
+</body>
+</html>
+s

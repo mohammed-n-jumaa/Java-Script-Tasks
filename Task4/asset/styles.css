@@ -1,0 +1,31 @@
+#shoppingListApp {
+    width: 300px;
+    margin: auto;
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+}
+
+#itemList {
+    padding-left: 0;
+}
+
+#itemList li {
+    background-color: #f8f9fa; 
+    border: 1px solid #dee2e6; 
+    list-style-type: none; 
+    margin-bottom: 5px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#newItem {
+    margin-bottom: 10px;
+}
+
+.btn-delete {
+    color: #fff;
+    background-color: #dc3545; 
+    border-color: #dc3545;
+}

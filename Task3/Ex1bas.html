@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form with Labels</title>
+    <style>
+    .error {
+        color: red;
+        font-size: 12px;
+        margin-left: 10px;
+    }
+
+    button:disabled {
+        background-color: #ccc;
+        cursor: not-allowed;
+    }
+
+    form {
+        width: 50%;
+        margin: 20px auto;
+        padding: 20px;
+        box-shadow: 0 0 10px #ccc;
+        border-radius: 5px;
+    }
+
+    input[type="text"], input[type="password"] {
+        width: 95%; 
+        padding: 8px;
+        margin-bottom: 10px; 
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    button {
+        width: 100%;
+        padding: 10px;
+        background-color: #007BFF; 
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #0056b3; 
+    }
+
+    .required {
+        color: red;
+        margin-left: 5px;
+    }
+    </style>
+</head>
+<body>
+    <form id="userForm">
+        <input type="text" id="username" placeholder="Username">
+        <span class="error" id="usernameError"></span>
+        <br>
+
+        <input type="password" id="password" placeholder="Password">
+        <span class="error" id="passwordError"></span>
+        <br>
+
+        <input type="password" id="confirmPassword" placeholder="Confirm Password">
+        <span class="error" id="confirmPasswordError"></span>
+        <br>
+
+        <button type="submit" id="submitBtn" disabled>Submit</button>
+    </form>
+
+
+    <script src="./asset/main.js"></script>
+</body>
+</html>

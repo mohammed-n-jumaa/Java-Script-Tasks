@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Score Array</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            margin: 0;
+        }
+        #container {
+            border: 2px solid blue;
+            padding: 10px;
+            width: 300px;
+            margin: auto;
+        }
+        input[type="text"], button {
+            margin-top: 5px;
+        }
+        table {
+            width: 100%;
+            margin-top: 10px;
+        }
+        th, td {
+            text-align: left;
+            padding: 5px;
+        }
+        th {
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Use a Test Score Array</h1>
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name">
+            <label for="score">Score:</label>
+            <input type="text" id="score">
+            <button id="addButton">Add to Array</button>
+            <button id="resultsButton">Display Results</button>
+            <button id="scoresButton">Display Scores</button>
+        </div>
+        <div id="results"></div>
+        <table id="scores_table">
+            <tr>
+                <th>Name</th>
+                <th>Score</th>
+            </tr>
+        </table>
+    </div>
+
+  <script src="./asset/main.js"></script>
+</body>
+</html>
