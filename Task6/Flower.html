@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Garden Info</title>
+</head>
+<body>
+    <section class="containerSec">
+        <div class="formDiv">
+            <form action="" id="formGarden">
+                <fieldset>
+                    <legend>Garden Information</legend>
+                    <label for="nameInp">Name</label>
+                    <br> 
+                    <input type="text" name="nameInp" id="nameInp">
+                    <br><br>
+                    <label for="selImg">Image</label>
+                    <br>
+                    <select name="selImg" id="selImg">
+                        <option value="alstroemerias">Alstroemerias</option>
+                        <option value="gardenias">Gardenias</option>
+                        <option value="orchids">Orchids</option>
+                        <option value="peonies">Peonies</option>
+                        <option value="roses">Roses</option>
+                        <option value="sunflowers">Sunflowers</option>
+                        <option value="tulips">Tulips</option>
+                    </select>
+                    <br><br>
+                    <label for="sesonInp">Season</label>
+                    <br> 
+                    <input type="text" name="sesonInp" id="sesonInp">
+                    <br><br>
+                    <button type="submit">Send</button>
+                    <button type="button" id="clerLis">Clear list</button>
+                </fieldset>
+            </form>
+        </div>
+        <div class="tableDiv" id="tableGarden">
+            <table id="tabCon">
+                <thead>
+                    <tr>
+                        <th>Action</th>
+                        <th>Image</th>
+                        <th>Name</th>
+                        <th>Season</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody id="bodCon"></tbody>
+            </table>
+        </div>
+    </section>
+
+    <script src="./main.js"></script>
+</body>
+</html>
