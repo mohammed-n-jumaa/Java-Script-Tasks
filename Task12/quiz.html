@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Quiz</title>
+    <link rel="stylesheet" href="./quiz.css">
+</head>
+<body>
+    <div class="container">
+        <div id="quiz">
+            <h2>Simple Quiz</h2>
+            <div id="question-container">
+                <div id="question">Question text</div>
+                <div class="answer">
+                    <input type="radio" name="answer" value="0" id="a">
+                    <label id="a_text">Answer A</label>
+                </div>
+                <div class="answer">
+                    <input type="radio" name="answer" value="1" id="b">
+                    <label id="b_text">Answer B</label>
+                </div>
+                <div class="answer">
+                    <input type="radio" name="answer" value="2" id="c">
+                    <label id="c_text">Answer C</label>
+                </div>
+                <div class="answer">
+                    <input type="radio" name="answer" value="3" id="d">
+                    <label id="d_text">Answer D</label>
+                </div>
+            </div>
+            <button id="submit">Next</button>
+        </div>
+        <div id="score-container" class="hidden">
+            <h2>Your Score</h2>
+            <p id="score">You scored 0 out of 4!</p>
+            <button id="play-again">Play Again</button>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
